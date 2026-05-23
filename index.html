@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Of The Oceans</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-overlay">
+            <h1>🌊 All Of The Oceans</h1>
+            <p>Descubrí los secretos de los 5 océanos del planeta</p>
+        </div>
+    </header>
+
+    <!-- INTRO -->
+    <section class="intro">
+        <div class="intro-cards">
+            <div class="intro-card">
+                <span>🌍</span>
+                <strong>71%</strong>
+                <p>de la Tierra cubierta por agua</p>
+            </div>
+            <div class="intro-card">
+                <span>🌊</span>
+                <strong>5</strong>
+                <p>océanos en el planeta</p>
+            </div>
+            <div class="intro-card">
+                <span>🐠</span>
+                <strong>240,000+</strong>
+                <p>especies marinas conocidas</p>
+            </div>
+            <div class="intro-card">
+                <span>💧</span>
+                <strong>50%</strong>
+                <p>del oxígeno que respiramos</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN OCÉANOS -->
+    <section class="oceanos">
+        <h2>🗺️ Elegí un océano para explorar</h2>
+
+        <div class="botones">
+            <button onclick="mostrarOceano('pacifico')" id="btn-pacifico">🌊 Pacífico</button>
+            <button onclick="mostrarOceano('atlantico')" id="btn-atlantico">⛵ Atlántico</button>
+            <button onclick="mostrarOceano('indico')" id="btn-indico">🌺 Índico</button>
+            <button onclick="mostrarOceano('antartico')" id="btn-antartico">🐧 Antártico</button>
+            <button onclick="mostrarOceano('artico')" id="btn-artico">🐻‍❄️ Ártico</button>
+        </div>
+
+        <div class="panel" id="panel">
+
+            <!-- PACÍFICO -->
+            <div class="info" id="pacifico">
+                <div class="info-header">
+                    <img src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=900&q=80" alt="Océano Pacífico">
+                    <div class="info-header-text">
+                        <h3>🌊 Océano Pacífico</h3>
+                        <p>El más grande y profundo del mundo</p>
+                    </div>
+                </div>
+                <div class="info-body">
+                    <div class="datos-rapidos">
+                        <div class="dato"><span>📏</span><strong>165.2M km²</strong><small>Superficie</small></div>
+                        <div class="dato"><span>📉</span><strong>4,280 m</strong><small>Prof. media</small></div>
+                        <div class="dato"><span>🕳️</span><strong>10,994 m</strong><small>Máxima prof.</small></div>
+                        <div class="dato"><span>🌡️</span><strong>-1.4° a 30°C</strong><small>Temperatura</small></div>
+                    </div>
+                    <div class="info-texto">
+                        <h4>📖 Descripción</h4>
+                        <p>El océano Pacífico es el más grande y profundo del planeta. Su nombre fue dado por el explorador Fernando de Magallanes y significa "mar en calma". Cubre más superficie que todos los continentes juntos y contiene la Fosa Mariana, el punto más profundo conocido de la Tierra.</p>
+                        <h4>🌟 Datos curiosos</h4>
+                        <ul>
+                            <li>🔥 Rodea el <strong>Anillo de Fuego</strong>, donde ocurre el 90% de los terremotos del mundo.</li>
+                            <li>🏝️ Contiene más de <strong>25,000 islas</strong>, más que cualquier otro océano.</li>
+                            <li>🐳 Es hogar de la <strong>ballena azul</strong>, el animal más grande del planeta.</li>
+                            <li>🦈 El <strong>tiburón blanco</strong> habita sus aguas desde hace 450 millones de años.</li>
+                            <li>🌀 El <strong>Gran Parche de Basura del Pacífico</strong> es del tamaño de Texas.</li>
+                            <li>🌊 Sus olas pueden alcanzar <strong>30 metros de altura</strong> durante tormentas.</li>
+                        </ul>
+                        <h4>🐠 Vida marina destacada</h4>
+                        <p>Ballena azul, tiburón blanco, pulpo gigante, delfín mular, tortuga laúd, pez vela y calamar Humboldt.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ATLÁNTICO -->
+            <div class="info" id="atlantico">
+                <div class="info-header">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=900&q=80" alt="Océano Atlántico">
+                    <div class="info-header-text">
+                        <h3>⛵ Océano Atlántico</h3>
+                        <p>El océano de los grandes exploradores</p>
+                    </div>
+                </div>
+                <div class="info-body">
+                    <div class="datos-rapidos">
+                        <div class="dato"><span>📏</span><strong>106.4M km²</strong><small>Superficie</small></div>
+                        <div class="dato"><span>📉</span><strong>3,332 m</strong><small>Prof. media</small></div>
+                        <div class="dato"><span>🕳️</span><strong>8,376 m</strong><small>Máxima prof.</small></div>
+                        <div class="dato"><span>🌡️</span><strong>-2° a 29°C</strong><small>Temperatura</small></div>
+                    </div>
+                    <div class="info-texto">
+                        <h4>📖 Descripción</h4>
+                        <p>El océano Atlántico es el segundo más grande del mundo y separa América de Europa y África. Fue la ruta de los grandes navegantes y exploradores durante siglos. Es el más joven geológicamente, formado hace unos 150 millones de años cuando los continentes se separaron.</p>
+                        <h4>🌟 Datos curiosos</h4>
+                        <ul>
+                            <li>🧭 Fue cruzado por <strong>Cristóbal Colón</strong> en 1492 en su viaje a América.</li>
+                            <li>🌀 El misterioso <strong>Triángulo de las Bermudas</strong> está en sus aguas.</li>
+                            <li>🌊 La <strong>Corriente del Golfo</strong> regula el clima de Europa.</li>
+                            <li>🏔️ La <strong>Dorsal Mesoatlántica</strong> es la cadena montañosa más larga del mundo (16,000 km).</li>
+                            <li>🚢 El <strong>Titanic</strong> descansa en su fondo a 3,800 metros de profundidad.</li>
+                            <li>🐋 Es la ruta de migración de la <strong>ballena jorobada</strong>.</li>
+                        </ul>
+                        <h4>🐠 Vida marina destacada</h4>
+                        <p>Ballena jorobada, tiburón toro, atún rojo, tortuga boba, delfín listado, manatí del Caribe y anguila europea.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ÍNDICO -->
+            <div class="info" id="indico">
+                <div class="info-header">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=900&q=80" alt="Océano Índico">
+                    <div class="info-header-text">
+                        <h3>🌺 Océano Índico</h3>
+                        <p>El más cálido y misterioso</p>
+                    </div>
+                </div>
+                <div class="info-body">
+                    <div class="datos-rapidos">
+                        <div class="dato"><span>📏</span><strong>70.5M km²</strong><small>Superficie</small></div>
+                        <div class="dato"><span>📉</span><strong>3,897 m</strong><small>Prof. media</small></div>
+                        <div class="dato"><span>🕳️</span><strong>7,258 m</strong><small>Máxima prof.</small></div>
+                        <div class="dato"><span>🌡️</span><strong>22° a 28°C</strong><small>Temperatura</small></div>
+                    </div>
+                    <div class="info-texto">
+                        <h4>📖 Descripción</h4>
+                        <p>El océano Índico es el tercero más grande y el más cálido del planeta. Baña las costas de África, Asia, Australia y la Antártida. Sus aguas templadas favorecen una biodiversidad marina extraordinaria y albergan algunos de los arrecifes de coral más hermosos del mundo.</p>
+                        <h4>🌟 Datos curiosos</h4>
+                        <ul>
+                            <li>🌡️ Tiene las <strong>aguas superficiales más cálidas</strong> de todos los océanos.</li>
+                            <li>🌊 Los <strong>monzones de Asia</strong> están directamente influenciados por él.</li>
+                            <li>💎 Contiene las <strong>Maldivas</strong>, el archipiélago más bajo del mundo.</li>
+                            <li>🐢 Las <strong>tortugas marinas</strong> viajan miles de km para desovar en sus playas.</li>
+                            <li>🛢️ El <strong>40% del petróleo mundial</strong> se transporta por sus aguas.</li>
+                            <li>🌸 Alberga los <strong>arrecifes de coral</strong> más biodiversos del planeta.</li>
+                        </ul>
+                        <h4>🐠 Vida marina destacada</h4>
+                        <p>Tortuga verde, dugongo, pez payaso, tiburón ballena, mantarraya gigante, delfín jorobado del Indo-Pacífico y nautilo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ANTÁRTICO -->
+            <div class="info" id="antartico">
+                <div class="info-header">
+                    <img src="https://images.unsplash.com/photo-1551415923-a2297c7fda79?w=900&q=80" alt="Océano Antártico">
+                    <div class="info-header-text">
+                        <h3>🐧 Océano Antártico</h3>
+                        <p>El más frío y ventoso del planeta</p>
+                    </div>
+                </div>
+                <div class="info-body">
+                    <div class="datos-rapidos">
+                        <div class="dato"><span>📏</span><strong>21.9M km²</strong><small>Superficie</small></div>
+                        <div class="dato"><span>📉</span><strong>3,270 m</strong><small>Prof. media</small></div>
+                        <div class="dato"><span>🕳️</span><strong>7,235 m</strong><small>Máxima prof.</small></div>
+                        <div class="dato"><span>🌡️</span><strong>-2° a 10°C</strong><small>Temperatura</small></div>
+                    </div>
+                    <div class="info-texto">
+                        <h4>📖 Descripción</h4>
+                        <p>El océano Antártico (o Austral) rodea completamente la Antártida y fue reconocido oficialmente como el quinto océano en el año 2000. Es el más frío y ventoso, con vientos que pueden superar los 300 km/h. Sus corrientes únicas afectan el clima de todo el planeta.</p>
+                        <h4>🌟 Datos curiosos</h4>
+                        <ul>
+                            <li>🧊 Sus aguas pueden bajar a <strong>-2°C sin congelarse</strong> por la salinidad.</li>
+                            <li>🌀 La <strong>Corriente Circumpolar Antártica</strong> es la más poderosa del mundo.</li>
+                            <li>🌍 Sus aguas distribuyen <strong>nutrientes a todos los océanos</strong> del planeta.</li>
+                            <li>🧊 Contiene el <strong>90% del hielo</strong> y el 70% del agua dulce de la Tierra.</li>
+                            <li>🦐 El <strong>krill antártico</strong> es la base de toda la cadena alimentaria polar.</li>
+                            <li>🌬️ Registra los <strong>vientos más fuertes</strong> del planeta Tierra.</li>
+                        </ul>
+                        <h4>🐠 Vida marina destacada</h4>
+                        <p>Pingüino emperador, foca leopardo, ballena jorobada, orca, krill antártico, pez de hielo y calamar colosal.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ÁRTICO -->
+            <div class="info" id="artico">
+                <div class="info-header">
+                    <img src="artico.jpg" alt="Océano Ártico">
+                    <div class="info-header-text">
+                        <h3>🐻‍❄️ Océano Ártico</h3>
+                        <p>El más pequeño y amenazado</p>
+                    </div>
+                </div>
+                <div class="info-body">
+                    <div class="datos-rapidos">
+                        <div class="dato"><span>📏</span><strong>14M km²</strong><small>Superficie</small></div>
+                        <div class="dato"><span>📉</span><strong>1,205 m</strong><small>Prof. media</small></div>
+                        <div class="dato"><span>🕳️</span><strong>5,625 m</strong><small>Máxima prof.</small></div>
+                        <div class="dato"><span>🌡️</span><strong>-2° a 0°C</strong><small>Temperatura</small></div>
+                    </div>
+                    <div class="info-texto">
+                        <h4>📖 Descripción</h4>
+                        <p>El océano Ártico es el más pequeño y superficial del mundo. Está rodeado por los continentes del hemisferio norte y permanece cubierto de hielo gran parte del año. Es el más sensible al cambio climático: su temperatura sube 4 veces más rápido que el promedio global.</p>
+                        <h4>🌟 Datos curiosos</h4>
+                        <ul>
+                            <li>❄️ Está cubierto de <strong>hielo marino</strong> casi todo el año.</li>
+                            <li>☀️ En verano tiene <strong>sol las 24 horas</strong> (sol de medianoche).</li>
+                            <li>🌡️ Se calienta <strong>4 veces más rápido</strong> que el resto del planeta.</li>
+                            <li>🛢️ Bajo su lecho hay el <strong>13% de las reservas de petróleo</strong> sin descubrir del mundo.</li>
+                            <li>🧊 Ha perdido el <strong>40% de su hielo</strong> en los últimos 40 años.</li>
+                            <li>🌌 Es uno de los mejores lugares para ver <strong>auroras boreales</strong>.</li>
+                        </ul>
+                        <h4>🐠 Vida marina destacada</h4>
+                        <p>Oso polar, narval, morsa, beluga, foca barbuda, zorro ártico y bacalao ártico.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>🌊 All Of The Oceans — Explorando el mundo azul</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
